@@ -2,6 +2,7 @@
 
 /**
  * Warning, url is like this for example -> laravel.gr/s/subscribe
+ * 
  */
 return [
     'urls' => [
