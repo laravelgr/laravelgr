@@ -112,7 +112,7 @@
 
         <div class="flex justify-between mt-4 sm:items-center sm:justify-between">
             <div class="text-center text-sm text-gray-500 sm:text-left">
-                <div class="flex items-center bg-red-500 text-white rounded-2xl px-4 py-2">
+                <div class="flex items-center text-white rounded-2xl px-4 py-2" style="background-color: #FF2D20">
                     <a href="{{route('sponsors')}}" class="ml-1 underline " target="_blank">
                        <div class="flex">
                            <div class="text-md font-bold mt-1">Our Sponsors</div>
@@ -123,7 +123,14 @@
                     </a>
                 </div>
             </div>
-            <div class="text-sm font-light text-gray-500">Partnered with the <a href="https://www.certificationforlaravel.com/" target="_blank" class="underline">Laravel Certification program</a></div>
+            <div class="text-sm font-light text-gray-500">
+                <div class="flex items-center gap-2">
+                    <div>Partnered with</div>
+                    <div><a href="https://www.certificationforlaravel.com/" target="_blank" class="underline">
+                            <x-certification-logo class="w-32 h-8"/>
+                        </a></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

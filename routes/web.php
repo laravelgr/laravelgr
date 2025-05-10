@@ -6,7 +6,6 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-
 Route::get('/s/{shortcut}', function ($shortcut) {
 
     $urls = config('shortcuts.urls');
@@ -21,4 +20,4 @@ Route::get('/s/{shortcut}', function ($shortcut) {
 
 Route::get('/sponsors', function () {
     return view('sponsors');
-})->name('sponsors');;
+})->name('sponsors');
