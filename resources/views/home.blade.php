@@ -15,8 +15,8 @@
 </head>
 <body class="antialiased">
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-    <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-        <div class="flex justify-between">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
                 <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
                     <g clip-path="url(#clip0)" fill="#1261A0">
@@ -26,7 +26,7 @@
             </div>
             <div class="flex justify-center pt-8 sm:justify-start items-center sm:pt-0">
                 <div class="flex justify-center items-center space-x-2">
-                    <div class="pt-4">
+                    <div class="pt-4 dark:text-white">
                         Proudly supported by
                     </div>
                     <a href="https://www.laravel.com">
@@ -110,8 +110,8 @@
             </div>
         </div>
 
-        <div class="flex justify-between mt-4 sm:items-center sm:justify-between">
-            <div class="text-center text-sm text-gray-500 sm:text-left">
+        <div class="flex flex-col sm:flex-row justify-between mt-4 sm:items-center sm:justify-between space-y-4 sm:space-y-0">
+            <div class="flex justify-center text-sm text-gray-500 w-full sm:w-auto">
                 <div class="flex items-center text-white rounded-2xl px-4 py-2" style="background-color: #FF2D20">
                     <a href="{{route('sponsors')}}" class="ml-1 underline " target="_blank">
                        <div class="flex">
@@ -123,7 +123,7 @@
                     </a>
                 </div>
             </div>
-            <div class="text-sm font-light text-gray-500">
+            <div class="text-sm font-light text-gray-500 dark:text-white flex justify-center">
                 <div class="flex items-center gap-2">
                     <div>Partnered with</div>
                     <div><a href="https://www.certificationforlaravel.com/" target="_blank" class="underline">
