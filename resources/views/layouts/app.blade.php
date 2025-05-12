@@ -31,7 +31,7 @@
         <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
             <div class="grid grid-cols-1">
                 <div class="p-6">
-                    <div class="">
+                    <div>
                         <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                             {{ $slot }}
                         </div>
