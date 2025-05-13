@@ -2,11 +2,11 @@
 <x-app-layout>
     <div class="py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-4xl font-bold text-center mb-12">Our Sponsors</h1>
+            <h1 class="text-4xl font-bold text-center mb-12">{{ __('sponsors.headline') }}</h1>
 
             @foreach (config('sponsors.tiers') as $tierId => $tier)
                 <div class="mb-16">
-                    <h2 class="text-3xl font-semibold text-center mb-8 text-gray-800">{{ $tier['name'] }} Sponsors</h2>
+                    <h2 class="text-3xl font-semibold text-center mb-8 text-gray-800">{{ __("sponsors.{$tierId}_plural") }} {{ __('sponsors.generic') }}</h2>
 
                     @if (count($tier['sponsors']) > 0)
                         <div class="grid grid-cols-1 {{ $tierId === 'silver' ? 'sm:grid-cols-2 md:grid-cols-3' : '' }} gap-8 justify-items-center">
@@ -29,7 +29,7 @@
                             @for ($i = 0; $i < ($tierId === 'silver' ? 3 : 1); $i++)
                                 <div class="{{ $tierId === 'platinum' ? 'w-96 h-48' : ($tierId === 'gold' ? 'w-80 h-40' : 'w-64 h-32') }}
                                     bg-gray-100 rounded-lg shadow-lg p-6 flex items-center justify-center">
-                                    <p class="text-gray-400 text-center">Available {{ $tier['name'] }} Slot</p>
+                                    <p class="text-gray-400 text-center">{{ __('sponsors.available') }} {{ __("sponsors.{$tierId}_feminine") }} {{ __('sponsors.slot') }}</p>
                                 </div>
                             @endfor
                         </div>
@@ -39,8 +39,8 @@
 
             <!-- Become a Sponsor Section -->
             <div class="flex flex-col items-center text-center">
-                <h2 class="text-2xl font-semibold mb-4">Become a Sponsor</h2>
-                <p class="text-gray-600 mb-6">Support the Greek Laravel community and showcase your brand!</p>
+                <h2 class="text-2xl font-semibold mb-4">{{ __('sponsors.become_a_sponsor') }}</h2>
+                <p class="text-gray-600 mb-6">{{ __('sponsors.support_by_sponsoring') }}</p>
             </div>
         </div>
     </div>
