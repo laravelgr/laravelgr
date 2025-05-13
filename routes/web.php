@@ -6,6 +6,14 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
+Route::get('/locale/{locale}', function ($locale) {
+    if (in_array($locale, config('app.available_locales'))) {
+        session(['locale' => $locale]);
+    }
+
+    return redirect()->back();
+})->name('locale.switch');
+
 Route::get('/s/{shortcut}', function ($shortcut) {
 
     $urls = config('shortcuts.urls');
