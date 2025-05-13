@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel Greek community</title>
+    <title>{{ __('homepage.title') }}</title>
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
@@ -27,7 +27,7 @@
             <div class="flex justify-center pt-8 sm:justify-start items-center sm:pt-0">
                 <div class="flex justify-center items-center space-x-2">
                     <div class="pt-4 dark:text-white">
-                        Proudly supported by
+                        {{ __('homepage.proudly_supported_by') }}
                     </div>
                     <a href="https://www.laravel.com">
                         <div class="w-8 h-8">
@@ -44,13 +44,13 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
                         </svg>
-                        <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://join.slack.com/t/laravelgreece/shared_invite/zt-1hr7depv6-iexqPts7C3GQbcgpk2wfzQ" class="underline text-gray-900 dark:text-white" target="_blank">Slack</a></div>
+                        <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://join.slack.com/t/laravelgreece/shared_invite/zt-1hr7depv6-iexqPts7C3GQbcgpk2wfzQ" class="underline text-gray-900 dark:text-white" target="_blank">{{ __('homepage.slack') }}</a></div>
                     </div>
 
                     <div class="ml-12">
                         <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                            Slack is the platform where we can communicate even on a daily basis. <a
-                                href="https://join.slack.com/t/laravelgreece/shared_invite/zt-1hr7depv6-iexqPts7C3GQbcgpk2wfzQ" class="underline" target="_blank">Sign up for free</a> and instantly connect with our community.
+                            {{ __('homepage.slack_description') }} <a
+                                href="https://join.slack.com/t/laravelgreece/shared_invite/zt-1hr7depv6-iexqPts7C3GQbcgpk2wfzQ" class="underline" target="_blank">{{ __('homepage.sign_up_free') }}</a> {{ __('homepage.connect_with_community') }}
                         </div>
                     </div>
                 </div>
@@ -60,17 +60,17 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
                         </svg>
-                        <div class="ml-4 dark:text-white text-gray-900 text-lg leading-7 font-semibold">Meetups/Hangouts</div>
+                        <div class="ml-4 dark:text-white text-gray-900 text-lg leading-7 font-semibold">{{ __('homepage.meetups_hangouts') }}</div>
                     </div>
 
                     <div class="ml-12">
                         <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                            For the past ten years, we have been meeting in person and broadcasting our talks live so that remote members of the community can also participate! We are one of the most active communities worldwide and now have the official support of Laravel Inc.
+                            {{ __('homepage.meetups_description') }}
                         </div>
 
                         <div class="mt-2 text-bold dark:text-white text-gray-900 underline">
                             <a target="_blank" href="https://lu.ma/qrdc9ibi">
-                                Upcoming meetup: 15/05/2025 18:30 - Thessaloniki
+                                {{ __('homepage.upcoming_meetup') }}
                             </a>
                         </div>
                     </div>
@@ -81,12 +81,12 @@
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500">
                             <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
                         </svg>
-                        <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://www.youtube.com/channel/UCXgd0om3ZNufW8GocLUH23Q/videos" class="underline text-gray-900 dark:text-white" target="_blank">Past Events</a></div>
+                        <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://www.youtube.com/channel/UCXgd0om3ZNufW8GocLUH23Q/videos" class="underline text-gray-900 dark:text-white" target="_blank">{{ __('homepage.past_events') }}</a></div>
                     </div>
 
                     <div class="ml-12">
                         <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                            We maintain a <a href="https://www.youtube.com/channel/UCXgd0om3ZNufW8GocLUH23Q/videos" class="underline" target="_blank">Youtube</a> account where we upload material from our previous meetings whenever possible.
+                            {{ __('homepage.we_maintain_a') }} <a href="https://www.youtube.com/channel/UCXgd0om3ZNufW8GocLUH23Q/videos" class="underline" target="_blank">{{ __('homepage.youtube') }}</a> {{ __('homepage.youtube_description') }}
                         </div>
                     </div>
                 </div>
@@ -97,13 +97,13 @@
                             <path stroke-linecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
                         </svg>
                         <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white"><a
-                                href="https://laravel.gr/s/subscribe" class="underline">Subscribe to our newsletter</a></div>
+                                href="https://laravel.gr/s/subscribe" class="underline">{{ __('homepage.subscribe_newsletter') }}</a></div>
                     </div>
 
                     <div class="ml-12">
                         <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                            Stay updated on community news and activities by simply <a
-                                href="https://laravel.gr/s/subscribe" class="underline" target="_blank">subscribing to our mailing list!</a> This is the only sure way to never miss out on our events and initiatives!
+                            {{ __('homepage.stay_updated') }} <a
+                                href="https://laravel.gr/s/subscribe" class="underline" target="_blank">{{ __('homepage.subscribing_mailing_list') }}</a> {{ __('homepage.never_miss_out') }}
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                 <div class="flex items-center text-white rounded-2xl px-4 py-2" style="background-color: #FF2D20">
                     <a href="{{route('sponsors')}}" class="ml-1 underline " target="_blank">
                        <div class="flex">
-                           <div class="text-md font-bold mt-1">Our Sponsors</div>
+                           <div class="text-md font-bold mt-1">{{ __('homepage.our_sponsors') }}</div>
                            <div> <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" class="size-6">
                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                                </svg></div>
@@ -125,7 +125,7 @@
             </div>
             <div class="text-sm font-light text-gray-500 dark:text-white flex justify-center">
                 <div class="flex items-center gap-2">
-                    <div>Partnered with</div>
+                    <div>{{ __('homepage.partnered_with') }}</div>
                     <div><a href="https://www.certificationforlaravel.com/" target="_blank" class="underline">
                             <x-certification-logo class="w-32 h-8"/>
                         </a></div>
