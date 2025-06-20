@@ -69,8 +69,8 @@
                         </div>
 
                         <div class="mt-2 text-bold dark:text-white text-gray-900 underline">
-                            <a target="_blank" href="https://lu.ma/3nkfpq8q">
-                                Upcoming meetup: 19/06/2025 19:00 - Athens
+                            <a target="_blank" href="https://lu.ma/hg80oyhi">
+                                Upcoming meetup: 23/10/2025 19:00 - Athens
                             </a>
                         </div>
                     </div>
