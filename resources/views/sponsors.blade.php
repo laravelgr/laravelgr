@@ -8,7 +8,7 @@
             @foreach (config('sponsors.tiers') as $tierId => $tier)
                 <div class="mb-20">
                     {{-- Tier label --}}
-                    <div class="flex items-center justify-center gap-3 mb-8">
+                    <div class="flex items-center justify-center gap-3 mb-8 pt-4">
                         <div class="h-px flex-1 max-w-24
                             {{ $tierId === 'platinum' ? 'bg-gradient-to-r from-transparent to-gray-300' : ($tierId === 'gold' ? 'bg-gradient-to-r from-transparent to-amber-200' : 'bg-gradient-to-r from-transparent to-gray-200') }}">
                         </div>
@@ -23,7 +23,7 @@
 
                     @if (count($tier['sponsors']) > 0)
                         <div class="grid gap-5 justify-items-center
-                            {{ $tierId === 'platinum' ? 'grid-cols-1 sm:grid-cols-2' : ($tierId === 'gold' ? 'grid-cols-2 sm:grid-cols-3 max-w-2xl mx-auto' : 'grid-cols-2 sm:grid-cols-3 max-w-xl mx-auto') }}">
+                            {{ $tierId === 'platinum' ? 'grid-cols-1 sm:grid-cols-2' : ($tierId === 'gold' ? 'grid-cols-1 sm:grid-cols-2 max-w-lg mx-auto' : 'grid-cols-2 sm:grid-cols-3 max-w-xl mx-auto') }}">
                             @foreach ($tier['sponsors'] as $sponsor)
                                 <a href="{{ $sponsor['url'] }}"
                                    target="_blank"
