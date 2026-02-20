@@ -69,8 +69,8 @@
                         </div>
 
                         <div class="mt-2 text-bold dark:text-white text-gray-900 underline">
-                            <a target="_blank" href="https://luma.com/xcd6j3dn">
-                                Upcoming meetup: 19/02/2026 18:30 - Thessaloniki
+                            <a target="_blank" href="https://luma.com/89sprk8x">
+                                Upcoming meetup: 19/03/2026 18:30 - Athens
                             </a>
                         </div>
                     </div>
