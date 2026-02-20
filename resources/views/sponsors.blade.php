@@ -22,24 +22,22 @@
                     </div>
 
                     @if (count($tier['sponsors']) > 0)
-                        <div class="grid gap-5 justify-items-center
-                            {{ $tierId === 'platinum' ? 'grid-cols-1 sm:grid-cols-2' : ($tierId === 'gold' ? 'grid-cols-1 sm:grid-cols-2 max-w-lg mx-auto' : 'grid-cols-2 sm:grid-cols-3 max-w-xl mx-auto') }}">
+                        <div class="{{ $tierId === 'platinum' ? 'grid grid-cols-1 sm:grid-cols-2 gap-5' : ($tierId === 'gold' ? 'flex flex-wrap justify-center gap-4' : 'flex flex-wrap justify-center gap-3') }}">
                             @foreach ($tier['sponsors'] as $sponsor)
                                 <a href="{{ $sponsor['url'] }}"
                                    target="_blank"
                                    rel="noopener"
-                                   class="group relative block w-full rounded-xl transition-all duration-300
+                                   class="group relative block rounded-xl transition-all duration-300
                                        {{ $tierId === 'platinum'
-                                           ? 'bg-white border border-gray-100 shadow-sm hover:shadow-lg hover:border-gray-200 hover:-translate-y-0.5 min-h-40 p-6'
+                                           ? 'w-full bg-white border border-gray-100 shadow-sm hover:shadow-lg hover:border-gray-200 hover:-translate-y-0.5 min-h-40 p-6'
                                            : ($tierId === 'gold'
-                                               ? 'bg-white border border-gray-100 shadow-sm hover:shadow-md hover:border-amber-100 hover:-translate-y-0.5 min-h-20 p-4'
-                                               : 'bg-white border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 min-h-16 p-3') }}">
-                                    <div class="w-full h-full flex items-center justify-center
-                                        {{ $tierId === 'platinum' ? 'min-h-28' : ($tierId === 'gold' ? 'min-h-12' : 'min-h-10') }}">
+                                               ? 'w-48 h-20 bg-white border border-gray-100 shadow-sm hover:shadow-md hover:border-amber-100 hover:-translate-y-0.5 p-3'
+                                               : 'w-36 h-16 bg-white border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 p-2') }}">
+                                    <div class="w-full h-full flex items-center justify-center">
                                         <img src="{{ asset('images/sponsors/' . $sponsor['image']) }}"
                                              alt="{{ $sponsor['name'] }}"
                                              class="max-w-full object-contain transition-transform duration-300 group-hover:scale-105
-                                                {{ $tierId === 'platinum' ? 'max-h-28' : ($tierId === 'gold' ? 'max-h-14' : 'max-h-10') }}"
+                                                {{ $tierId === 'platinum' ? 'max-h-28' : ($tierId === 'gold' ? 'max-h-12' : 'max-h-8') }}"
                                              title="{{ $sponsor['name'] }}">
                                     </div>
                                 </a>
