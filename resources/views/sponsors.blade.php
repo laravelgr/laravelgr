@@ -60,7 +60,7 @@
             {{-- Become a Sponsor Section --}}
             <div class="flex flex-col items-center text-center pt-4 pb-2">
                 <p class="text-gray-500 text-sm">Interested in supporting the Greek Laravel community?</p>
-                <p class="text-gray-400 text-xs mt-1">Get in touch to learn about sponsorship opportunities</p>
+                <p class="text-gray-400 text-xs mt-1">Get in touch at <a href="mailto:community@laravel.gr" class="underline hover:text-gray-600 transition-colors">community@laravel.gr</a> to learn about sponsorship opportunities</p>
             </div>
         </div>
     </div>
