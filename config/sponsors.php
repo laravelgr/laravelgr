@@ -24,7 +24,7 @@ return [
                 [
                     'name' => 'Epignosis',
                     'image' => 'platinum/epignosis.png',
-                    'url' => 'https://epignosis.com',
+                    'url' => 'https://www.epignosishq.com',
                 ],
             ],
         ],
