@@ -31,13 +31,13 @@
                                        {{ $tierId === 'platinum'
                                            ? 'w-full bg-white border border-gray-50 shadow-sm hover:shadow-lg hover:border-gray-100 hover:-translate-y-0.5 min-h-40 p-6'
                                            : ($tierId === 'gold'
-                                               ? 'w-48 h-24 bg-white border border-gray-50 shadow-sm hover:shadow-md hover:border-amber-100 hover:-translate-y-0.5 p-5'
+                                               ? 'w-96 h-48 bg-white border border-gray-50 shadow-sm hover:shadow-md hover:border-amber-100 hover:-translate-y-0.5 p-6'
                                                : 'w-36 h-16 bg-white border border-gray-50 shadow-sm hover:shadow-md hover:-translate-y-0.5 p-2') }}">
                                     <div class="w-full h-full flex items-center justify-center">
                                         <img src="{{ asset('images/sponsors/' . $sponsor['image']) }}"
                                              alt="{{ $sponsor['name'] }}"
                                              class="max-w-full object-contain transition-transform duration-300 group-hover:scale-105
-                                                {{ $tierId === 'platinum' ? 'max-h-28' : ($tierId === 'gold' ? 'max-h-14' : 'max-h-8') }}"
+                                                {{ $tierId === 'platinum' ? 'max-h-28' : ($tierId === 'gold' ? 'max-h-28' : 'max-h-8') }}"
                                              title="{{ $sponsor['name'] }}">
                                     </div>
                                 </a>
