@@ -95,7 +95,7 @@
                     <h2 class="text-gray-900 dark:text-white font-semibold text-sm">Past Events</h2>
                 </div>
                 <p class="text-gray-500 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
-                    Catch up on previous talks on our <a href="https://www.youtube.com/channel/UCXgd0om3ZNufW8GocLUH23Q/videos" target="_blank" class="text-[#1261A0] dark:text-[#4a9ede] hover:text-[#0e4f82] dark:hover:text-[#6db5f0] transition-colors">YouTube channel</a>.
+                    Catch up on previous talks on our <a href="https://www.youtube.com/@laravelgreece776/featured" target="_blank" class="text-[#1261A0] dark:text-[#4a9ede] hover:text-[#0e4f82] dark:hover:text-[#6db5f0] transition-colors">YouTube channel</a>.
                 </p>
             </div>
 
