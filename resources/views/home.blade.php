@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Laravel Greek Community</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
     <link href="https://fonts.bunny.net/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
     <style>
@@ -45,7 +46,7 @@
             <div class="flex items-center justify-center gap-2 text-slate-400 dark:text-slate-500 text-xs tracking-wide">
                 <span>Proudly supported by</span>
                 <a href="https://www.laravel.com" class="hover:opacity-80 transition-opacity">
-                    <x-laravel-logo-inc class="w-5 h-5" />
+                    <x-laravel-logo-inc style="width: 2.5rem; height: 2.5rem;" />
                 </a>
             </div>
         </div>
@@ -126,8 +127,8 @@
             <a href="https://www.certificationforlaravel.com/" target="_blank"
                class="flex items-center gap-2.5 text-gray-400 dark:text-slate-500 text-xs hover:text-gray-500 dark:hover:text-slate-400 transition-colors">
                 <span>Partnered with</span>
-                <span class="rounded-md px-2 py-1 dark:bg-white/90">
-                    <x-certification-logo class="w-24 h-6" />
+                <span class="inline-flex items-center rounded-md px-2 py-1 dark:bg-white/90">
+                    <x-certification-logo style="width: 9.6rem; height: 2.4rem;" />
                 </span>
             </a>
         </div>
