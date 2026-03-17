@@ -37,7 +37,7 @@
                                         <img src="{{ asset('images/sponsors/' . $sponsor['image']) }}"
                                              alt="{{ $sponsor['name'] }}"
                                              class="max-w-full object-contain transition-transform duration-300 group-hover:scale-105
-                                                {{ $tierId === 'platinum' ? 'max-h-28' : ($tierId === 'gold' ? 'max-h-28' : 'max-h-8') }}"
+                                                {{ $sponsor['size'] ?? ($tierId === 'platinum' ? 'max-h-28' : ($tierId === 'gold' ? 'max-h-28' : 'max-h-8')) }}"
                                              title="{{ $sponsor['name'] }}">
                                     </div>
                                 </a>
