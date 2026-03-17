@@ -77,11 +77,13 @@
                 <p class="text-gray-500 dark:text-slate-400 text-xs sm:text-sm leading-relaxed mb-3">
                     For the past ten years, meeting in person and broadcasting live. One of the most active communities worldwide with official Laravel Inc. support.
                 </p>
-                <a href="https://luma.com/89sprk8x" target="_blank"
-                   class="inline-flex items-center gap-2 text-xs font-medium text-[#1261A0] dark:text-white bg-[#1261A0]/10 dark:bg-[#1261A0]/20 border border-[#1261A0]/20 dark:border-[#1261A0]/30 rounded-lg px-3 py-2 hover:bg-[#1261A0]/15 dark:hover:bg-[#1261A0]/30 transition-colors">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#1261A0] dark:bg-[#4a9ede] animate-pulse shrink-0"></span>
-                    19/03/2026 18:30 &mdash; Athens
-                </a>
+                @if(\Carbon\Carbon::parse(config('meetup.next_event.event_date'))->isFuture())
+                    <a href="{{ config('meetup.next_event.event_url') }}" target="_blank"
+                       class="inline-flex items-center gap-2 text-xs font-medium text-[#1261A0] dark:text-white bg-[#1261A0]/10 dark:bg-[#1261A0]/20 border border-[#1261A0]/20 dark:border-[#1261A0]/30 rounded-lg px-3 py-2 hover:bg-[#1261A0]/15 dark:hover:bg-[#1261A0]/30 transition-colors">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#1261A0] dark:bg-[#4a9ede] animate-pulse shrink-0"></span>
+                        {{ \Carbon\Carbon::parse(config('meetup.next_event.event_date'))->format('d/m/Y H:i') }} &mdash; {{ config('meetup.next_event.event_text') }}
+                    </a>
+                @endif
             </div>
 
             {{-- Past Events --}}
