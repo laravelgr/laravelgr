@@ -2,8 +2,8 @@
 
 return [
     'next_event' => [
-        'event_date' => '2026-03-19 18:30',
-        'event_text' => 'Athens',
-        'event_url' => 'https://luma.com/89sprk8x',
+        'event_date' => '2026-06-04 18:30',
+        'event_text' => 'Thessaloniki',
+        'event_url' => 'https://luma.com/yk3ewvei',
     ],
 ];
