@@ -30,18 +30,18 @@ return [
                     'url' => 'https://www.epignosishq.com',
                     'size' => 'max-h-9 max-w-52',
                 ],
+                [
+                    'name' => 'Typesense',
+                    'image' => 'platinum/typesense.webp',
+                    'url' => 'https://typesense.org',
+                    'size' => 'max-h-28 max-w-40',
+                ],
             ],
         ],
         'gold' => [
             'name' => 'Gold',
             'description' => 'Our Gold Sponsors',
             'sponsors' => [
-                [
-                    'name' => 'Typesense',
-                    'image' => 'gold/typesense.webp',
-                    'url' => 'https://typesense.org',
-                    'size' => 'max-h-32 max-w-40',
-                ],
             ],
         ],
         'silver' => [
