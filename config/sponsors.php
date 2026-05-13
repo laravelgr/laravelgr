@@ -7,12 +7,6 @@ return [
             'description' => 'Our Platinum Sponsors',
             'sponsors' => [
                 [
-                    'name' => 'Native PHP',
-                    'image' => 'platinum/nativephp.png',
-                    'url' => 'https://nativephp.com',
-                    'size' => 'max-h-16 max-w-52',
-                ],
-                [
                     'name' => 'Laravel',
                     'image' => 'platinum/laravel.png',
                     'url' => 'https://laravel.com',
